@@ -98,8 +98,6 @@ function Testimonials() {
 }
 
 export default function Home(): JSX.Element {
-	const { theme } = useTheme();
-
 	return (
 		<main className="flex-1">
 			<section id="hero"><Hero /></section>

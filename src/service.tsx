@@ -6,7 +6,6 @@ import { Fuel, Clock, Truck } from "lucide-react";
 import type { FC } from "react";
 import { useState } from "react";
 import { useTheme } from "./ThemeContext";
-import greenEarth from "./assets/green.webp";
 import shield from "./assets/safety.jpg";
 import fuel from "./assets/fuel.jpg";
 

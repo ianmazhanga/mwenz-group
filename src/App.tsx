@@ -4,6 +4,7 @@ import "./styles/ColorfulTheme.css";
 import "./styles/Navbar.css";
 import "./styles/Testimonials.css";
 import "./styles/DarkMode.css";
+import "./styles/Responsive.css";
 
 import { useTheme } from "./ThemeContext";
 import { Moon, Sun } from "lucide-react";
@@ -16,6 +17,7 @@ const FAQ = lazy(() => import("./FAQ"));
 const ContactPage = lazy(() => import("./ContactPage"));
 const AboutPage = lazy(() => import("./AboutPage"));
 const ServicesPage = lazy(() => import("./ServicesPage"));
+const IndustriesPage = lazy(() => import("./IndustriesPage"));
 
 const Navbar = memo(function Navbar() {
 	const [scrolled, setScrolled] = useState(false);
@@ -102,8 +104,8 @@ const Navbar = memo(function Navbar() {
 					</Link>
 				</li>
 				<li>
-					<a
-						href="/#industries"
+					<Link
+						to="/industries"
 						style={{
 							padding: '0.5rem 1rem',
 							borderRadius: '8px',
@@ -123,7 +125,7 @@ const Navbar = memo(function Navbar() {
 						}}
 					>
 						Industries
-					</a>
+					</Link>
 				</li>
 				<li>
 					<Link
@@ -306,6 +308,7 @@ export default function App(): JSX.Element {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/services" element={<ServicesPage />} />
+					<Route path="/industries" element={<IndustriesPage />} />
 					<Route path="/about" element={<AboutPage />} />
 					<Route path="/contact" element={<ContactPage />} />
 					<Route path="/faq" element={<FAQ />} />

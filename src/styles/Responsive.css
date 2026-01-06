@@ -1,0 +1,100 @@
+/* Mobile Responsive Styles */
+
+/* Tablets and below (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .industry-section {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .industry-section > * {
+    order: 1 !important;
+  }
+
+  .industry-section > *:first-child {
+    order: 1 !important;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Navbar adjustments */
+  nav.navbar {
+    padding: 1rem !important;
+    flex-wrap: wrap;
+  }
+
+  nav.navbar ul {
+    display: none !important;
+  }
+
+  nav.navbar img {
+    height: 35px !important;
+  }
+
+  /* Hero sections */
+  h1 {
+    font-size: clamp(1.75rem, 8vw, 3rem) !important;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 6vw, 2.5rem) !important;
+  }
+
+  /* Grid layouts */
+  [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Industries section on home */
+  .services-grid,
+  [class*="grid"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Padding adjustments */
+  section {
+    padding: 2rem 1rem !important;
+  }
+
+  /* Contact page grid */
+  [style*="gridTemplateColumns: '1fr 1fr'"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Services page */
+  div[style*="gridTemplateColumns: '1fr 1fr'"] {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.75rem !important;
+  }
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.25rem !important;
+  }
+
+  /* Button sizing */
+  button,
+  a[style*="padding"] {
+    padding: 0.75rem 1.5rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  /* Image heights */
+  img[style*="height"] {
+    height: 250px !important;
+  }
+}

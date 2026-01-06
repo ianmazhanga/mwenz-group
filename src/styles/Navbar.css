@@ -1,0 +1,28 @@
+/* Navbar styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar a {
+  text-decoration: none;
+  color: #1F2937;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar a:hover {
+  color: #2563EB;
+}

@@ -1,0 +1,64 @@
+/* About Page Styles */
+
+.about-page {
+  min-height: 100vh;
+}
+
+.about-hero {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.service-section {
+  margin-bottom: 3rem;
+}
+
+.service-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.service-section h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.service-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.contact-bar {
+  padding: 3rem 2rem;
+  color: #ffffff;
+}
+
+.contact-bar h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contact-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.contact-bar a:hover {
+  text-decoration: underline;
+}

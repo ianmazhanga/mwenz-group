@@ -1,0 +1,118 @@
+/* Dark Mode Global Styles */
+
+:root {
+  --bg-primary-light: #ffffff;
+  --bg-secondary-light: #f9fafb;
+  --bg-tertiary-light: #eff6ff;
+  --text-primary-light: #111827;
+  --text-secondary-light: #374151;
+  --text-tertiary-light: #6b7280;
+  --border-light: #e5e7eb;
+
+  --bg-primary-dark: #111827;
+  --bg-secondary-dark: #1f2937;
+  --bg-tertiary-dark: #374151;
+  --text-primary-dark: #f3f4f6;
+  --text-secondary-dark: #d1d5db;
+  --text-tertiary-dark: #9ca3af;
+  --border-dark: #4b5563;
+}
+
+/* Theme Toggle Button Styles */
+.theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dark mode specific overrides */
+[data-theme="dark"] body {
+  background: var(--bg-primary-dark);
+  color: var(--text-primary-dark);
+}
+
+[data-theme="dark"] .navbar a {
+  color: var(--text-secondary-dark);
+}
+
+[data-theme="dark"] .navbar a:hover {
+  color: #60a5fa;
+}
+
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--text-primary-dark);
+}
+
+[data-theme="dark"] p {
+  color: var(--text-secondary-dark);
+}
+
+/* Card styles */
+[data-theme="dark"] .card,
+[data-theme="dark"] .service-card {
+  background: var(--bg-secondary-dark);
+  border-color: var(--border-dark);
+}
+
+[data-theme="dark"] .card:hover,
+[data-theme="dark"] .service-card:hover {
+  background: var(--bg-tertiary-dark);
+}
+
+/* Input fields */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea,
+[data-theme="dark"] select {
+  background: var(--bg-secondary-dark);
+  color: var(--text-primary-dark);
+  border-color: var(--border-dark);
+}
+
+[data-theme="dark"] input::placeholder,
+[data-theme="dark"] textarea::placeholder {
+  color: var(--text-tertiary-dark);
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus,
+[data-theme="dark"] select:focus {
+  border-color: #60a5fa;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+}
+
+/* Button styles */
+[data-theme="dark"] button:not(.theme-toggle) {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+  color: white;
+}
+
+[data-theme="dark"] button:not(.theme-toggle):hover {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+}
+
+/* Footer */
+[data-theme="dark"] footer {
+  background: var(--bg-secondary-dark);
+  border-top-color: var(--border-dark);
+}

@@ -7,7 +7,7 @@ import { ThemeProvider } from './ThemeContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/mwenz-group">
       <ThemeProvider>
         <App />
       </ThemeProvider>

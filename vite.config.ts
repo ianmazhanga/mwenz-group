@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/mwenzgroup-website/',
+  base: '/mwenz-group/',
   build: {
     // Enable code splitting for better performance
     rollupOptions: {
